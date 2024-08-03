@@ -1,0 +1,62 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# 代理模式
+<Tabs>
+
+<TabItem value="golang" label="Golang">
+
+
+```go showLineNumbers {6}
+package main
+
+import "fmt"
+
+type Subject interface {
+    DoAction() //注意 Proxy 和 被Proxy代理的对象都实现了同一个 DoAction 接口
+}
+
+//代理模式
+//-----------------真实操作-----------------
+type RealSubject struct {}
+
+func (r *RealSubject) DoAction() {
+    fmt.Println("执行真实操作")
+}
+//-----------------代理操作-----------------
+type Proxy struct {
+    subject Subject
+}
+
+func (p *Proxy) DoAction() {
+    fmt.Println("开始执行代理")
+    p.subject.DoAction()
+    fmt.Println("代理执行结束")
+}
+
+func main() {
+    proxy := &Proxy{subject: &RealSubject{}}
+    proxy.DoAction()
+}
+```
+
+</TabItem>
+
+<TabItem value="js" label="JavaScript">
+
+```js
+//无内容
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+#无内容
+```
+
+</TabItem>
+
+
+</Tabs>
