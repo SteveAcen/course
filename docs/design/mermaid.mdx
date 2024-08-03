@@ -1,0 +1,59 @@
+Mermaid 是一种基于文本的图表绘制工具，它支持多种类型的图表，包括类图。在Mermaid中，类图的连线表示类之间的关系，如继承、实现、关联、依赖等。以下是Mermaid类图中常见的连线类型及其语法：
+
+1. **继承** (`--|>`): 表示子类继承自父类。
+   ```mermaid
+   classDiagram
+      classA --|> classB
+   ```
+
+2. **实现** (`..|>`): 表示类实现了接口。
+   ```mermaid
+   classDiagram
+      classA ..|> interfaceA
+   ```
+
+3. **关联** (`--`): 表示两个类之间的关联关系。
+   ```mermaid
+   classDiagram
+      classA -- classB
+   ```
+
+4. **聚合** (`o--`): 表示聚合关系，即整体与部分的关系。
+   ```mermaid
+   classDiagram
+      classA o-- classB
+   ```
+
+5. **组合** (`*--`): 表示组合关系，部分对象的生命周期依赖于整体对象。
+   ```mermaid
+   classDiagram
+      classA *-- classB
+   ```
+
+6. **依赖** (`-->` ): 表示一个类使用另一个类的对象。
+   ```mermaid
+   classDiagram
+      classA --> classB
+      classA --> classC
+   ```
+
+7. **多重性** (`0..1`, `1`, `*`, `+`, etc.): 表示关联的多重性，即一个对象可以与多少个其他对象关联。
+   ```mermaid
+   classDiagram
+      classA "0..1" <-- "1" classB
+      classA "*" --o "1" classC
+   ```
+
+8. **角色** (`:`): 通常用于实现接口的类，表示类的角色或职责。
+   ```mermaid
+   classDiagram
+      classA : implements InterfaceA
+   ```
+
+9. **注释** (`-- This is a comment`): 可以添加注释来描述类图的某些部分。
+   ```mermaid
+   classDiagram
+      classA -- classB : This is an association
+   ```
+
+这些是Mermaid类图中最常用的连线类型。你可以根据需要组合使用这些连线来表示类之间的关系。记得，Mermaid类图的语法需要在支持Mermaid渲染的环境中使用。

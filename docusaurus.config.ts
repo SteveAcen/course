@@ -87,6 +87,12 @@ const config: Config = {
 					sidebarId: "philosophy",
 					label: "先驱与理念",
 				},
+				{
+					type: "docSidebar",
+					position: "right",
+					sidebarId: "react",
+					label: "react",
+				},
 				{ to: "/blog", label: "动态", position: "right" },
 				{
 					type: "docSidebar",
@@ -105,7 +111,7 @@ const config: Config = {
 			style: "dark",
 			links: [
 				{
-					title: "精品课程",
+					title: "基础课程",
 					items: [
 						{
 							label: "数据结构与算法",
@@ -113,6 +119,19 @@ const config: Config = {
 						},
 						{
 							label: "设计模式",
+							to: "/docs/algorithm",
+						},
+					],
+				},
+				{
+					title: "实战课程",
+					items: [
+						{
+							label: "分布式数据设计",
+							to: "/docs/algorithm",
+						},
+						{
+							label: "前端实战",
 							to: "/docs/algorithm",
 						},
 					],
