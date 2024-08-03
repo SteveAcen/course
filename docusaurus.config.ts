@@ -89,7 +89,7 @@ const config: Config = {
 					label: "社区",
 				},
 				{
-					href: "https://github.com/facebook/docusaurus",
+					href: "https://github.com/Shawn-a11/my-website.git",
 					label: "GitHub",
 					position: "right",
 				},
@@ -137,7 +137,11 @@ const config: Config = {
 						},
 						{
 							label: "GitHub",
-							href: "https://github.com/facebook/docusaurus",
+							href: "https://github.com/Shawn-a11/my-website.git",
+						},
+						{
+							label: "Gitee",
+							href: "https://gitee.com/steveacen/course.git",
 						},
 					],
 				},
