@@ -79,7 +79,7 @@ const config: Config = {
 					type: "docSidebar",
 					position: "right",
 					sidebarId: "design",
-					label: "设计模式",
+					label: "系统设计",
 				},
 				{
 					type: "docSidebar",
