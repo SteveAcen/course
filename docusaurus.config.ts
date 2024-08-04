@@ -115,11 +115,11 @@ const config: Config = {
 					items: [
 						{
 							label: "数据结构与算法",
-							to: "/docs/algorithm",
+							href: "https://twitter.com/docusaurus",
 						},
 						{
 							label: "设计模式",
-							to: "/docs/algorithm",
+							href: "https://twitter.com/docusaurus",
 						},
 					],
 				},
@@ -128,11 +128,11 @@ const config: Config = {
 					items: [
 						{
 							label: "分布式数据设计",
-							to: "/docs/algorithm",
+							href:"https://twitter.com/docusaurus",
 						},
 						{
 							label: "前端实战",
-							to: "/docs/algorithm",
+							href: "https://twitter.com/docusaurus",
 						},
 					],
 				},
